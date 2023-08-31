@@ -1,4 +1,5 @@
 let thirdSection = document.querySelector(".features-div");
+let secondSection = document.querySelector(".second-section")
 let headerElm = document.querySelector(".first-section");
 let downArrow = document.querySelector(".down-btn");
 let upArrow = document.querySelector(".up-btn");

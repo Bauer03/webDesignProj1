@@ -1,18 +1,19 @@
 :root{
-    --bg-color:#dbdbdb;
     --bg-color-primary:#f3f3f3;
-    --bg-color-secondary:rgb(41, 67, 137);
+    --bg-color-secondary:rgb(53, 90, 193);
     --font-family:'Montserrat', sans-serif;
-    --color-secondary:rgb(31,31,31);
+    --color-secondary:rgb(0, 30, 80);
     --color:#f3f3f3;
 
     font-family: var(--font-family);
     /* background-color: var(--bg-color-primary); */
     background-color: var(--color-secondary);
     box-sizing: border-box;
-    position: relative;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;   
+}
+
+body {
+    margin: 0px;
 }
 
 .material-symbols-outlined {
@@ -43,7 +44,7 @@
 .image-div{
     max-width: 100%;
     height: auto;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-primary);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -54,7 +55,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr 1fr 1fr;
     justify-content: center;
     padding: 5em;
     padding-top: 0px;
@@ -62,6 +63,7 @@
 }
 
 .first-section{
+    max-height: 100dvh;
     gap: 2em;
     background-color: var(--color-secondary);
     align-items: center;
@@ -73,7 +75,6 @@
 
 .first-section-nested {
     padding: 2em;
-    padding-left: 3em;
     display: grid;
     grid-template-columns: auto auto;
     background-color: var(--bg-color-primary);
@@ -120,6 +121,8 @@
 
 .text-section{
     background-color: var(--bg-color-secondary);
+    overflow: scroll;
+    align-items: center;
     border-radius: 20px;
     padding: 2em;
     color: var(--color);
