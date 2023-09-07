@@ -35,15 +35,12 @@ body {
 
 .rider-img{
     border-radius: 20px;
-    max-width: 100%;
-    width: auto;
     box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
     -webkit-box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
     -moz-box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
 }
 
 .image-div{
-    max-width: 100%;
     height: auto;
     background-color: var(--bg-color-primary);
     border-radius: 20px;
@@ -51,7 +48,6 @@ body {
     align-items: center;
     padding: 2em;
     align-self: center;
-    top: 0px;
 }
 
 .container {
@@ -79,6 +75,7 @@ body {
     grid-template-columns: auto auto;
     background-color: var(--bg-color-primary);
     border-radius: 20px;
+    min-height: 25dvh;
 }
 
 .main-title {
@@ -148,14 +145,12 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 2em;
-    overflow-y: scroll;
     height: 491px;
     margin-bottom: 4em;
 }
 
 .text-section{
     background-color: var(--bg-color-secondary);
-    overflow: scroll;
     align-items: center;
     border-radius: 20px;
     padding: 2em;
@@ -163,6 +158,18 @@ body {
     display: flex;
     font-size: 27px;
     line-height: 35px;
+}
+
+.features-div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2em;
+    background-color: var(--bg-color-secondary);
+    border-radius: 20px;
+    padding: 2em;
+    color: var(--color);
+    align-items: center;
+    margin-bottom: 2em;
 }
 
 .features-title {
@@ -174,23 +181,11 @@ body {
     font-size: 25px;
 }
 
-.features-div {
+.features-items {
     display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 2em;
-    background-color: var(--bg-color-secondary);
-    border-radius: 20px;
-    padding: 2em;
-    color: var(--color);
-    overflow: scroll;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
-.feature-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
+    overflow-y: scroll;
 }
 
 .feature {
@@ -198,9 +193,6 @@ body {
     border-radius: 20px;
     padding: 2em;
     color: var(--color-secondary);
-    box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
-    -webkit-box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
-    -moz-box-shadow: -10px 13px 28px -1px rgba(0,0,0,0.34);
     display: grid;
     align-items: center;
     gap: 1em;
