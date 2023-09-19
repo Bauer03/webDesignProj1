@@ -4,6 +4,16 @@ let scrollSecond = document.querySelector(".scroll-second");
 let scrollThird = document.querySelector(".scroll-third");
 let container = document.querySelector(".container");
 
+if (!scrollSecond) {
+    scrollSecond = document.getElementById("scroll2");
+    scrollFirst = document.getElementById("scroll1");
+}
+  
+if (!scrollThird) {
+    scrollThird = document.getElementById("scroll3");
+    scrollFirst = document.getElementById("scroll1");
+}
+
 let downArrow = document.querySelector(".down-btn"); 
 let upArrow = document.querySelector(".up-btn");
 let featuresItems = document.querySelector(".features-items")

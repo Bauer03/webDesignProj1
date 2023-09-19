@@ -21,6 +21,11 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .material-symbols-outlined {
     user-select: none;
     -webkit-user-select: none;
@@ -56,7 +61,7 @@ body {
 .first-section {
     padding: 2em;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr auto;
     position: relative;
 }
 
@@ -81,13 +86,42 @@ body {
     font-weight: bold;
     gap: 1em;
     justify-self: start;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 2em;
     background-color: var(--bg-color-secondary);
     color: var(--color);
     box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
     -webkit-box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
     -moz-box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
+}
+
+.nav-cluster {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items:stretch;
+    justify-self: end;
+    justify-content: center;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+.nav-cluster div {
+    background-color: var(--bg-color-secondary);
+    color: var(--color);
+    padding: 1rem;
+    border-radius: 15px;
+    justify-content: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
+    -webkit-box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
+    -moz-box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
+}
+
+.active {
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .button-cluster {
@@ -116,7 +150,7 @@ body {
 .up-btn, .down-btn, .home-btn {
     font-size: 50px !important;
     padding: 0.3em;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: var(--bg-color-secondary);
     color: var(--color);box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
     -webkit-box-shadow: -10px 11px 19px -8px rgba(0,0,0,0.64);
@@ -125,7 +159,7 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-.up-btn:hover,.down-btn:hover, .home-btn:hover{
+.up-btn:hover,.down-btn:hover, .home-btn:hover, .nav-cluster div:hover{
     transform: scale(1.05);
 }
 
@@ -166,8 +200,6 @@ body {
     padding: 2em;
     color: var(--color);
     display: flex;
-    font-size: 27px;
-    line-height: 35px;
 }
 
 .scroll-second{
@@ -263,8 +295,31 @@ body {
     line-height: 35px;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     :root{
         background-color: red;
     }
-}  
+}   */
+
+.colorway-text {
+    font-size: 2em;
+}
+
+.lighting-section{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+.lighting-title{
+    display: grid;
+    justify-content: center;
+    font-size: 3rem;
+    align-self: end
+}
+
+.lighting-text{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
